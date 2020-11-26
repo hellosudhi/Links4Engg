@@ -1,0 +1,48 @@
+.search
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    align-items: center
+    margin-top: 10vh
+
+    &__input
+        display: flex
+        border: 1px solid black
+        border-radius: 10px
+        padding: 10px
+        width: 300px
+        > input
+            border: 0px
+            outline: none
+            width: 100%
+        > img 
+            width: 20px
+            height: 20px
+    &__result
+        margin-top: 5px
+        padding: 10px
+        width: fit-content; 
+        width: 300px
+        height: 300px
+        border-radius: 5px;
+        background: #e0e4e6;
+        overflow: scroll
+        overflow-x: hidden
+        box-shadow:  5px 5px 10px #d3d6d8,-5px -5px 10px #edf2f4;
+        > ul
+            list-style-type: none
+            display: contents
+            
+            > li
+                padding: 5px 10px 5px 10px
+                display: flex
+            > li:hover
+                background-color: #c5c4c0;
+        &__completed
+            color: green
+        &__pending
+            color: red
+        &__on-going
+            color: orange 
+    &__hidden
+        visibility: hidden  
